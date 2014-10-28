@@ -47,6 +47,7 @@ extern "C" {
 #define BP_MEMORY_64MB_2_CHIP                   3
 #define BP_MEMORY_32MB_2_CHIP                   4
 #define BP_MEMORY_16MB_2_CHIP                   5
+#define BP_MEMORY_64MB_1_CHIP                   6
 
 /* Values for EthernetMacInfo PhyType. */
 #define BP_ENET_NO_PHY                          0
