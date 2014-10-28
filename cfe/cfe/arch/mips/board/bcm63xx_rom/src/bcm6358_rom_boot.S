@@ -162,10 +162,17 @@ LEAF(board_draminit)
         beq     t3, t4, 1f
         nop
  
-        /* Default DRAM settings for BCM6358 board (16MB, 1 chip) */
+        /**/* Default DRAM settings for BCM6358 board (16MB, 1 chip) */
         li      t2, (MEMC_12BIT_ROW | MEMC_9BIT_COL)
         li      v0, 16
-
+       **/
+       /* Default DRAM settings for BCM6358 board (BT HH2A / TG797n) 64MB, 1 chip */
+       li     t2,    (MEMC_13BIT_ROW | MEMC_10BIT_COL)
+       li     v0, 64
+       li     t4, BP_MEMORY_64MB_1_CHIP
+       beq    t3, t4, 1f
+       nop
+       
 1:
         or      t2, (MEMC_SELPRIORITY | MEMC_HIPRRTYQEN | MEMC_MIPS1HIPREN)
         or      t2, (MEMC_DQSGATEEN | MEMC_16BIT_BUS | MEMC_MEMTYPE_DDR)
