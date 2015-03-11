@@ -154,6 +154,13 @@ extern "C" {
 #define BP_GPIO_36_AL                           (36 | BP_ACTIVE_LOW)
 #define BP_GPIO_37_AH                           (37)
 #define BP_GPIO_37_AL                           (37 | BP_ACTIVE_LOW)
+// 6358 has 40 gpio whereas 6348 has 37
+#define BP_GPIO_38_AH                           (38)
+#define BP_GPIO_38_AL                           (38 | BP_ACTIVE_LOW)
+#define BP_GPIO_39_AH                           (39)
+#define BP_GPIO_39_AL                           (39 | BP_ACTIVE_LOW)
+#define BP_GPIO_40_AH                           (40)
+#define BP_GPIO_40_AL                           (40 | BP_ACTIVE_LOW)
 
 #define BP_SERIAL_GPIO_0_AH                     (0  | BP_GPIO_SERIAL)
 #define BP_SERIAL_GPIO_0_AL                     (0  | BP_GPIO_SERIAL | BP_ACTIVE_LOW)
